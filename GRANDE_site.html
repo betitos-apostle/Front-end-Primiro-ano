@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grandes_site.css"> 
+    <link rel="stylesheet" href="css/seila.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="ret">
+
+    </div>
+    <header>
+        <h1>Alice in Chains</h1>
+        <p>Alice in Chains foi formada em 1987 e foi de extrema importancia para cena do Grunge nos anos 90.</p>
+    </header>
+
+    <nav>
+        <a href="#disco">Discografia</a> 
+        <br>
+        <a href="#quiz">Questionários</a>
+        <br>
+        <a href="#int">Integrantes</a>
+        <br>
+        <a href="https://pt.wikipedia.org/wiki/Alice_in_Chains">Wikipedia</a>
+        
+    </nav>
+    <br><br><hr>
+    
+    <main>
+        <h2 id="disco">Discografia:</h2>
+        <ul>
+            <li>
+                Facelift<br>
+                <a href="https://en.wikipedia.org/wiki/Facelift_(Alice_in_Chains_album)" target="_blank">
+                    <img src="imgs/facelift.png" width="200" height="200" alt="Facelift">
+                </a>
+            </li>
+            
+            <li>
+                <br>Dirt<br>
+                <a href="https://en.wikipedia.org/wiki/Dirt_(Alice_in_Chains_album)" target="_blank">
+                    <img src="imgs/dirt.png" width="200" height="200" alt="Dirt">
+                </a>
+            </li>
+            
+            <li>
+                <br>Jar of Flies<br>
+                <a href="https://en.wikipedia.org/wiki/Jar_of_Flies" target="_blank">
+                    <img src="imgs/jar.png" width="200" height="200" alt="Jar_of_Flies">
+                </a>
+            </li>
+            
+            <li>
+                <br>self-titled<br>
+                <a href="https://en.wikipedia.org/wiki/Alice_in_Chains_(album)" target="_blank">
+                    <img src="imgs/self.png" width="200" height="200" alt="Self-titled">
+                </a>
+            </li>
+   
+            <li>
+                <br>MTV unplugged<br>
+                <a href="https://en.wikipedia.org/wiki/Unplugged_(Alice_in_Chains_album)" target="_blank">
+                    <img src="imgs/mtv.png" width="200" height="200" alt="MTV">
+                </a>
+            </li>
+            
+            <li>
+                <br>Black Gives Way to blue
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Black_Gives_Way_to_Blue" target="_blank">
+                    <img src="imgs/black.png" width="200" height="200" alt="Black_Gives_Way_to_Blue">
+                </a>
+            </li>
+           
+            <li>
+                <br>The Devil Put Dinosaurs Here
+                <br>
+                <a href="https://en.wikipedia.org/wiki/The_Devil_Put_Dinosaurs_Here" target="_blank">
+                    <img src="imgs/devil.png" width="200" height="200" alt="The_Devil_Put_Dinosaurs_Here">
+                </a>
+            </li>
+            
+            <li>
+                <br>Rainier Fog
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Rainier_Fog" target="_blank">
+                    <img src="imgs/rain.png" width="200" height="200" alt="Rainier_Fog">
+                </a>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <table>
+            <caption><h2 id="inte">Integrantes:</h2></caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Função</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Layne Staley</td>
+                    <td>Vocalista</td>
+                    <td>1987 - 1996</td>
+                </tr>
+                <tr>
+                    <td>Jerry Cantrell</td>
+                    <td>Guitarra & vocal</td>
+                    <td>1987 - Hoje</td>
+                </tr>
+                <tr>
+                    <td>Mike Starr</td>
+                    <td>Baixista</td>
+                    <td>1987 - 1993</td>
+                </tr>
+                <tr>
+                    <td>Mike Inez</td>
+                    <td>Baixista</td>
+                    <td>1993 - Hoje</td>
+                </tr>
+                <tr>
+                    <td>Sean Kinney</td>
+                    <td>Baterista</td>
+                    <td>1987 - Hoje</td>
+                </tr>
+                <tr>
+                    <td>Willian DuVall</td>
+                    <td>Vocalista</td>
+                    <td>2006 - Hoje</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+
+        <h2 id="quiz">Questionários:</h2>
+        <form method="post" action="recebe.php">
+    
+            <label>Nome:</label><br>
+            <input type="text" name="nome"><br><br>
+
+            <label>Quando começou a ouvir a banda:</label><br>
+            <input type="date" name="data"><br><br>
+
+            <label>Escolha um álbum favorito:</label><br>
+            <select name="album">
+                <option>Facelift</option>
+                <option>Dirt</option>
+                <option>Jar of Flies</option>
+            </select><br><br>
+            
+            <label>Você acha que William DuVall foi um bom novo integrante em comparação a Layne Staley?</label><br>
+            <input type="radio" name="duvall" value="sim"> Sim<br>
+            <input type="radio" name="duvall" value="nao"> Não<br><br>
+            <div id="notas">
+                <label>Nota p/ Facelift<br>1--2--3--4--5<br></label>
+                <input type="range" name="face"><br><br>
+                <label>Nota p/ Dirt<br>1--2--3--4--5<br></label>
+                <input type="range" name="Dirt"><br><br>
+                <label>Nota p/ Jar of Flies<br>1--2--3--4--5<br></label>
+                <input type="range" name="jar"><br><br>
+                <label>Nota p/ Self-titled<br>1--2--3--4--5<br></label>
+                <input type="range" name="self"><br><br>
+                <label>Nota p/ MTV Unplugged<br>1--2--3--4--5<br></label>
+                <input type="range" name="mtv"><br><br>
+                <label>Nota p/ Black Gives Way to Blue<br>1--2--3--4--5<br></label>
+                <input type="range" name="black"><br><br>
+                <label>Nota p/ The devil put Dinosaurs here<br>1--2--3--4--5<br></label>
+                <input type="range" name="devil"><br><br>
+                <label>Nota p/ Rainier Fog<br>1--2--3--4--5<br></label>
+                <input type="range" name="rain"><br><br>
+            </div>
+            <br><br>
+            <label>Comentário:</label><br>
+            <textarea name="comentario"></textarea><br><br>
+        
+            <input type="submit" value="Enviar">
+
+        </form>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1hnRTfzbT_s?si=spkODETN8KGsVdTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </main>
+
+    <footer>
+        <br><br><br>
+        <p id="footer">Feito por: Ryan da Costa gomes; aluno do curso de informática p/ interwebs</p>
+    </footer>
+
+</body>
+</html>
